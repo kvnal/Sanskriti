@@ -1,6 +1,6 @@
 # dapp-ui
 
-> My wondrous Nuxt.js project
+> My Nuxt.js project
 
 ## Build Setup
 
