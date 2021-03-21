@@ -1,5 +1,5 @@
 # Sanskriti
-Team Cheems - Sanskriti
+Team Nuvs - Sanskriti
 ===================
  To run the application
  ---------------------
