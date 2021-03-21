@@ -1,10 +1,14 @@
 # Sanskriti
 Team Cheems - Sanskriti
-
--> cd dapp-ui
--> npm run dev
-
-on new terminal
-
--> cd others
--> node app.js
+===================
+ To run the application
+ ---------------------
+* Make sure Metamask is installed and configured to Mumbai Testnet RPC
+* On the terminal\
+  -> cd dapp-ui\
+  -> npm i\
+  -> npm run dev
+* On a new terminal\
+  -> cd others\
+  -> npm i\
+  -> npm start
