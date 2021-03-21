@@ -1,5 +1,5 @@
 # Sanskriti
-Team Cheems - Sanskriti
+Sanskriti - Team Nuvs
 
 -> cd dapp-ui
 -> npm run dev
