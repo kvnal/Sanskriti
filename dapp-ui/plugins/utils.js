@@ -5,7 +5,7 @@ let metamaskWeb3 = new Web3('http://localhost:8545')
 //let metamaskWeb3 = new Web3('https://rpc-mumbai.matic.today')
 let account = null
 let sanskritiContract
-let sanskritiContractAddress = '0xa20DEF7Ce965dF1fFd6d1aCa23D6CC9c30bB8409' // Paste Contract address here
+let sanskritiContractAddress = '0xC0d2D010d1697603F8Dec8d3A646488018eeee2B' // Paste Contract address here
 
 export function web3() {
   return metamaskWeb3
