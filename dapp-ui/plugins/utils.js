@@ -55,7 +55,8 @@ export async function buyProduct(pId, quantity, totalPrice, pmode) {
   // TODO: call Airbnb.rentSpace
   if(pmode == "t"){
     //web3().utils.toWei(this.propData.price, 'ether')
-    totalPrice = (metamaskWeb3.utils.toWei((totalPrice/134017).toString(), 'ether'))
+    const pay = Math.round((totalPrice/134017)*Math.pow(10,7))/Math.pow(10,7)
+    totalPrice = (metamaskWeb3.utils.toWei(pay.toString(), 'ether'))
     console.log(totalPrice);
     const prop = await getSanskritiContract()
     .methods.buyProduct(pId, quantity, pmode)
@@ -64,6 +65,7 @@ export async function buyProduct(pId, quantity, totalPrice, pmode) {
       value: totalPrice,
     })
     alert('Product Bought Successfully')
+    
     }
   if(pmode == "f"){
     const prop = await getSanskritiContract()
@@ -72,6 +74,7 @@ export async function buyProduct(pId, quantity, totalPrice, pmode) {
       from: account[0],
     })
     alert('Product Booked Successfully pay '+totalPrice+' to the given UPI ID')
+    window.location.href="http://localhost:5000/payINR?amt="+totalPrice;
     }
   }
 
@@ -104,4 +107,5 @@ export async function markProduct(pId){
   .send({
     from: account[0],
   })
+
 }
